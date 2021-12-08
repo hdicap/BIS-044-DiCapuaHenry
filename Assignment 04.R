@@ -3,7 +3,7 @@ if(!require("readxl")) install.packages("readxl")
 library("readxl")
 if(!require("tidyverse")) install.packages("tidyverse")
 library("tidyverse")
-officials_old <- read_excel(here("/BIS-044-DiCapuaHenry/Data/dataset1.xls"))
+officials_old <- read_excel(here("Data", "dataset1.xls"))
 
 # Standardize the original data file
 officials_new <- officials_old %>% mutate(Title=replace(Title, Title=="Aldermen", "Alderman"),
