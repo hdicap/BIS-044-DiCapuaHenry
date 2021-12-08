@@ -9,7 +9,7 @@ if(!require("dplyr")) install.packages("dplyr")
 library("dplyr")
 if(!require("tidyverse")) install.packages("tidyverse")
 library("tidyverse")
-tonnage <- read.csv(here("/BIS-044-DiCapuaHenry/Data/TBQ05.20211116133909.csv"), header = TRUE, stringsAsFactors = FALSE)
+tonnage <- read.csv(here("Data", "TBQ05.20211116133909.csv"), header = TRUE, stringsAsFactors = FALSE)
 
 # Convert VALUE to numeric
 tonnage$VALUE <- as.numeric(tonnage$VALUE)
