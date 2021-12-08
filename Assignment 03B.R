@@ -1,7 +1,7 @@
 # Load the data file using here command
 if (!require("here")) install.packages("here")
 library("here")
-results <- read.csv(here("/BIS-044-DiCapuaHenry/Data/PRESIDENT_precinct_general.csv"))
+results <- read.csv(here("Data", "PRESIDENT_precinct_general.csv"))
 
 # Define values for Biden and Trump
 Biden <- 0
